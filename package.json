@@ -1,0 +1,19 @@
+{
+  "name": "js-dos-win98",
+  "version": "1.0.0",
+  "description": "Windows 98 in Electron with js-dos",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "mkdir -p dist/vendor/jsdos && cp -R node_modules/js-dos/dist/. dist/vendor/jsdos/",
+    "start": "npm run build && electron . --no-sandbox --disable-dev-shm-usage",
+    "start-gpu": "npm run build && electron . --no-sandbox --disable-dev-shm-usage",
+    "clean": "rm -rf node_modules package-lock.json dist",
+    "reinstall": "npm run clean && npm install"
+  },
+  "dependencies": {
+    "electron": "^42.0.1",
+    "js-dos": "^8.3.20",
+    "typescript": "^6.0.3"
+  }
+}

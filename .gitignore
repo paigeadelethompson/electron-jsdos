@@ -1,0 +1,6 @@
+win98.img
+*.core
+backup
+dist
+node_modules
+package-lock.json

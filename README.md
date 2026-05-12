@@ -1,0 +1,2 @@
+- `npm_config_platform=linux npm_config_arch=x64 npm install`
+- `npm_config_platform=linux npm_config_arch=x64 npm run start`
